@@ -1,23 +1,13 @@
-import { Card, CardContent, Typography } from '@mui/material';
-import './App.css';
+import React from "react";
+import { CssBaseline, Container } from "@mui/material";
+import HomePage from "./pages/Homepage";
 
 function App() {
   return (
-    <div className="App">
-      <Card sx={{ maxWidth: 300, margin: '1rem', textAlign: 'center' }}>
-          <CardContent>
-            <Typography variant="h5" component="div">
-              Pretoria
-            </Typography>
-            <Typography variant="h2" color="primary">
-              20°C
-            </Typography>
-            <Typography variant="body1" color="text.secondary">
-              Cool Day
-            </Typography>
-          </CardContent>
-        </Card>
-    </div>
+    <Container>
+      <CssBaseline />
+      <HomePage />
+    </Container>
   );
 }
 
