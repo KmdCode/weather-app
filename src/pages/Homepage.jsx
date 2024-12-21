@@ -8,7 +8,7 @@ const Homepage = () => {
     const [weatherData, setWeatherData] = useState([])
     const [loading, setLoading] = useState(true)
 
-    const cities = ["Pretoria", "Cape Town", "Durban", "Johannesburg", "Bloemfontein", "Polokwane", "Kimberly"]
+    const cities = ["Pretoria", "Cape Town", "Durban", "Johannesburg", "Bloemfontein", "Polokwane", "Kimberly", "Soshanguve", "Ga-Rankuwa", "Brits", "Phalaborwa"]
 
     useEffect(() => {
         const fetchWeather = async () => {
@@ -40,13 +40,13 @@ const Homepage = () => {
 
     return(
         <div>
-            <Typography variant="h4" align="centre" gutterBottom>
-                Weather SA
+            <Typography variant="h4" align="centre" gutterBottom marginTop={2}>
+                Popular Cities
             </Typography>
             {loading?(
                 <CircularProgress sx={{display:"block", margin: "2rem auto"}}/>
             ):(
-                <Grid container justifyContent="center">
+                <Grid container justifyContent="left">
                     {weatherData.map(weather => (
                         <WeatherCard
                             key={weather.city}

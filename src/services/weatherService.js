@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_KEY = `99add3c009a64f458e9135518242012`
+const API_KEY = process.env.REACT_APP_API_KEY
 const baseUrl =  'http://api.weatherapi.com/v1'
 
 const apiCalls = () => {

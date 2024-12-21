@@ -3,7 +3,7 @@ import { Card, CardContent, Typography } from "@mui/material";
 
 const WeatherCard = ({city, temperature, condition, icon}) => {
     return(
-        <Card sx={{maxWidth: 300, margin: 2, textAlign: "center"}}>
+        <Card sx={{width: 250, margin: 2, textAlign: "center"}}>
                 <CardContent>
                     <Typography variant="h5">{city}</Typography>
                     <img src={icon} alt={condition} style={{width:"50px"}}></img>
