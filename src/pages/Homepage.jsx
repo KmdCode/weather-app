@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from "react";
 import { CircularProgress, Grid, Typography } from "@mui/material";
-import WeatherCard from "../components/weatherCard";
+import WeatherCard from "../components/WeatherCard";
 import apiCalls from '../services/weatherService'
+import SearchBar from "../components/SearchBar";
 
 const Homepage = () => {
 
@@ -40,6 +41,7 @@ const Homepage = () => {
 
     return(
         <div>
+            <SearchBar/>
             <Typography variant="h4" align="centre" gutterBottom marginTop={2}>
                 Popular Cities
             </Typography>
