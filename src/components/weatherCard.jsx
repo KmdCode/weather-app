@@ -12,7 +12,6 @@ const WeatherCard = ({city, temperature, condition, icon}) => {
                 </CardContent>
         </Card>
     )
-    
 }
 
 export default WeatherCard

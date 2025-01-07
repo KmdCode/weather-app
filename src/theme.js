@@ -7,7 +7,7 @@ import App from './App';
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#1976d2', // Default MUI blue
+      main: '#1976d2',
     },
     secondary: {
       main: '#d32f2f',

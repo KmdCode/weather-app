@@ -29,6 +29,7 @@ const apiCalls = () => {
     }
 
     return {fetchCurrentWeather, fetchForecastWeather}
+
 }
 
 export default apiCalls
